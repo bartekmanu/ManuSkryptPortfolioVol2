@@ -1,0 +1,39 @@
+@import 'all'
+
+.desktop
+    background-image: url('/images/lezak.jpg')
+    height: 100vh
+    width: 100vw
+    @include backgroundStyle
+    display: flex
+    align-items: center
+
+.area_icons
+    background-color: transparent
+    width: 20%
+    height: 70%
+    .rim
+        height: 5rem
+        width: 7rem
+        border: 1px solid map-get($colors, bee)
+        background-color: map-get($colors, beetrans)
+        border-radius: 10px
+        color: white                                    // POPRAWIC
+        margin: 0 0 5vh 5vw
+        font-size: 12px
+        @include flexCenter
+        flex-direction: column
+        .about_me_icon, .interests_icon, .technologies_icon, .my_wrok_icon, .contact_icon
+            @include backgroundStyle
+            height: 4rem
+            width: 4rem
+        .about_me_icon
+            background-image: map-get($icons, about_me)
+        .interests_icon
+            background-image: map-get($icons, about_me)
+        .technologies_icon
+            background-image: map-get($icons, about_me)
+        .my_wrok_icon
+            background-image: map-get($icons, about_me)
+        .contact_icon
+            background-image: map-get($icons, about_me)
