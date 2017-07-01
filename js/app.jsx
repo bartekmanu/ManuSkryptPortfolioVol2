@@ -140,7 +140,7 @@ class LocalTime extends React.Component {
         },1000)
         return (
             <div className = 'local_time' >
-                <div> <h1>{ this.state.hour }</h1> </div>
+                <div> <p>{ this.state.hour }</p> </div>
             </div>
         );        
     }
