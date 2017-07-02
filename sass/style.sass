@@ -15,6 +15,8 @@
         justify-content: flex-end
         align-items: center
         margin: 0 20vw 0 0
+        p
+            margin: 0 1%
     .area_icons
         background-color: transparent
         width: 20%
@@ -46,6 +48,45 @@
                 background-image: map-get($icons, about_me)
             .trash_icon
                 background-image: map-get($icons, about_me)
+    .body_for_sections
+        height: 80%
+        width: 75%
+        border: 1px solid red //usunac
+        @include flexCenter
+        .about_me_section
+            height: 90%
+            width: 90%
+            border: 1px solid green //usunac
+            .window_top
+                border: 1px solid yellow//usunac
+                height: 5%
+                width: 100%
+                color: white //usunac
+                display: flex
+                justify-content: space-between
+                align-items: center
+                background-color: green //poprawic
+                p
+                    margin: 0 1%
+            .window_body
+                border: 1px solid blue //usunac
+                height: 95%
+                width: 100%
+                color: white //usunac
+                @include flexCenter
+                background-color: rgba(128, 0, 128, 0.5) //poprawic
+                .about_item
+                    @include flexCenter
+                    flex-direction: column
+                    width: 80%
+                    height: 100%
+                    p, h1, div
+                        margin: 5% 0 0 0
+    #about_photo 
+        background-image: url('/images/downhill_manu.jpg')
+        width: 80%
+        height: 40%
+        @include backgroundStyle
     .footer
         height: 5%
         width: 100%

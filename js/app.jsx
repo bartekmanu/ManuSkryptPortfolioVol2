@@ -7,29 +7,77 @@ document.addEventListener('DOMContentLoaded', function() {
 //TIMER
 class YourTime extends React.Component{
     // constructor(props) {
-        // super(props);
-// 
-        // this.state = {
-            // seconds: 0
-        // };
+    //     super(props);
+
+    //     this.state = {
+    //         seconds: 0
+    //     };
     // }
     // componentDidMount(){
-        // this.intervalId = setInterval(() => {
-            // this.setState({
-                // seconds: this.state.seconds + 1
-            // });
-        // }, 1000);
+    //     this.intervalId = setInterval(() => {
+    //         this.setState({
+    //             seconds: this.state.seconds + 1
+    //         });
+    //     }, 1000);
     // }
     // componentWillUnmount(){
-        // clearInterval(this.intervalId);
+    //     clearInterval(this.intervalId);
     // }
     render(){
         return (
             <div className = 'your_time'>
-                WELCOME
-                {/*<h1>Your time spent for me: {this.state.seconds} s.</h1>*/}
+                <p>WELCOME</p>
+                {/*<p>Your time spent for me: {this.state.seconds} s.</p>*/}
             </div>
         )  
+    }
+}
+
+// CONTAINERS
+
+class AboutMeBody extends React.Component {
+    render() {
+        return (
+            <div className="about_item">
+                <h1>About me</h1>
+                <p>My name is <span>Bartek</span> and I am a <span>Junior Frontend Developer.</span> When I set my aims at something, I always carry out my plans. It wasn't any different this time either.
+                </p>
+                <p>I came to the realisation that I needed more opportunities for development and self-improvement. Leaving my comfort zone was not easy, but, as they say, the faint heart never won fair lady.
+                </p>
+                <p>This is how I ended up at a <span>CodersLab</span> course. Why Frontend? The greatest thing about it is that I can continue to develop myself, this About Me page being an example of that.
+                </p>
+                <div id="about_photo"></div>
+            </div>
+        );
+    }
+}
+
+class LikeWindow extends React.Component {
+    render() {
+        return (
+            <div className="about_me_section">
+                <div className="window_top" >
+                    <p>Tytul</p>
+                    <p>X</p>
+                </div>
+                <div className="window_body" >
+                    <AboutMeBody />
+                </div>
+            </div>
+        );
+    }
+}
+
+
+// CONTAINER FOR SECTIONS
+
+class BodyForSections extends React.Component {
+    render() {
+        return (
+            <div className="body_for_sections" >
+                <LikeWindow />
+            </div>
+        );
     }
 }
 
@@ -114,18 +162,6 @@ class BodyForIcons extends React.Component {
 //AREA FOR WINDOWS
 
 //LOCAL TIME
-// class LocalTime extends React.Component {
-//     render() {
-//         let int = setInterval(()=> {
-//         let hour = new Date().toLocaleTimeString()
-//         },1000)
-//         return (
-//             <div className = 'local_time' >
-//                 <div> <span>Jest godzina:</span> <h1>{ this.hour }</h1> </div>
-//             </div>
-//         );        
-//     }
-// }
 class LocalTime extends React.Component {
 		constructor(props){
         super(props)
@@ -153,19 +189,20 @@ class Footer extends React.Component {
     render() {
         return (
             <div className = 'footer' >
-                <LocalTime />     
+                {/*<LocalTime />     */}
             </div>
         );
     }
 }
 
-//PULPIT
+//DESKTOP
 class Desktop extends React.Component {
     render() {
         return (
             <div className = 'desktop'>
                 <YourTime />,           
                 <BodyForIcons />,
+                <BodyForSections />,
                 <Footer />        
             </div>
         );
