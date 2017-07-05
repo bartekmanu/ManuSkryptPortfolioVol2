@@ -35,22 +35,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // CONTAINERS
 
-class AboutMeBody extends React.Component {
-    render() {
-        return (
-            <div className="about_item">
-                <h1>About me</h1>
-                <p>My name is <span>Bartek</span> and I am a <span>Junior Frontend Developer.</span> When I set my aims at something, I always carry out my plans. It wasn't any different this time either.
-                </p>
-                <p>I came to the realisation that I needed more opportunities for development and self-improvement. Leaving my comfort zone was not easy, but, as they say, the faint heart never won fair lady.
-                </p>
-                <p>This is how I ended up at a <span>CodersLab</span> course. Why Frontend? The greatest thing about it is that I can continue to develop myself, this About Me page being an example of that.
-                </p>
-                <div id="about_photo"></div>
-            </div>
-        );
-    }
-}
+// class AboutMeBody extends React.Component {
+    // render() {
+        // return (
+            // <div className="about_item">
+                {/*<h1>About me</h1>*/}
+                {/*<p>My name is <span>Bartek</span> and I am a <span>Junior Frontend Developer.</span> When I set my aims at something, I always carry out my plans. It wasn't any different this time either.*/}
+                {/*</p>*/}
+                {/*<p>I came to the realisation that I needed more opportunities for development and self-improvement. Leaving my comfort zone was not easy, but, as they say, the faint heart never won fair lady.*/}
+                {/*</p>*/}
+                {/*<p>This is how I ended up at a <span>CodersLab</span> course. Why Frontend? The greatest thing about it is that I can continue to develop myself, this About Me page being an example of that.*/}
+                {/*</p>*/}
+                {/*<div id="about_photo"></div>*/}
+            {/*</div>*/}
+        // );
+    // }
+// }
 
 class LikeWindow extends React.Component {
     render() {
@@ -82,16 +82,16 @@ class BodyForSections extends React.Component {
 }
 
 //ICONS
-class AboutMeIcon extends React.Component {
-    render() {
-        return (
-            <div className = 'rim'>         
-                <div className = 'about_me_icon'></div>
-                <p>About me</p>                
-            </div>
-        );
-    }
-}
+// class AboutMeIcon extends React.Component {
+//     render() {
+//         return (
+//             <div className = 'rim'>         
+//                 <div className = 'about_me_icon'></div>
+//                 <p>About me</p>                
+//             </div>
+//         );
+//     }
+// }
 class InterestsIcon extends React.Component {
     render() {
         return (

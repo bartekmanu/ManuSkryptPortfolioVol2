@@ -20,7 +20,7 @@ export default class YourTime extends React.Component{
     }
     render(){
         return (
-            <div className = 'your_time'>
+            <div className = 'yourTime'>
                 <p>WELCOME</p>
                 <p>Your time spent for me: {this.state.seconds} s.</p>
             </div>
