@@ -71,15 +71,15 @@ class LikeWindow extends React.Component {
 
 // CONTAINER FOR SECTIONS
 
-class BodyForSections extends React.Component {
-    render() {
-        return (
-            <div className="body_for_sections" >
-                <LikeWindow />
-            </div>
-        );
-    }
-}
+// class BodyForSections extends React.Component {
+//     render() {
+//         return (
+//             <div className="body_for_sections" >
+//                 <LikeWindow />
+//             </div>
+//         );
+//     }
+// }
 
 //ICONS
 // class AboutMeIcon extends React.Component {
