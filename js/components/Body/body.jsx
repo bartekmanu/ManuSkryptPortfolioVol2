@@ -7,7 +7,7 @@ import TechnologyComplex from "../Body/technology.jsx";
 import MyWorkComplex from "../Body/myWork.jsx";
 import ContactComplex from "../Body/contact.jsx";
 import TrashComplex from "../Body/trash.jsx";
-import LocalTime from "../Footer/footer.jsx";
+import Footer from "../Footer/footer.jsx";
 
 class ContainerIcon extends React.Component {
     render() {
@@ -31,7 +31,7 @@ export default class Desktop extends React.Component {
             <div className = 'desktop'>
                 <YourTime />                
                 <ContainerIcon />
-                <LocalTime />                
+                <Footer />                
             </div>
         );
     }

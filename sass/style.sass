@@ -3,7 +3,7 @@
     box-sizing: border-box
     
 .desktop
-    background-image: url('../images/lezak.jpg')
+    background-image: map-get($desktop, deskBackground)
     height: 100vh
     width: 100vw
     @include backgroundStyle
@@ -16,19 +16,20 @@
         align-items: center
         div
             margin-right: 20vw
+            color: map-get($colors, bee)
         color: white
         height: 5%
-        width: 100%
-        border: 1px solid red
+        width: 100% 
+        // border: 1px solid red
     .containerIcon
         height: 90%
         width: 15%
-        border: 1px solid pink
-    .localTime
-        color: white
+        // border: 1px solid pink
+    .footer
         height: 5%
         width: 100%
-        border: 1px solid red
+        // border: 1px solid red
+        background-color: rgba(250, 192, 58, 0.2)
         display: flex
         justify-content: space-between
         align-items: center
@@ -36,18 +37,38 @@
             margin-left: 2vw
             height: 35px
             width: 35px
-            border: 1px solid red
+            border: 3px solid black
             border-radius: 25px
-            background-image: url('../images/lapa.jpg')
+            background-image: map-get($start, start)
             @include backgroundStyle
+        .myCv
+            @include flexCenter
+            flex-direction: column
+            background-color: rgba(34, 139, 34, 0.8)
+            position: absolute
+            height: 500px
+            width: 400px
+            border: 1px solid green
+            margin: -28.5vh 0 0 0
+            p
+                a
+                    text-decoration: none
+                    color: white
+            #download
+                background-image: map-get($desktop, lapa)
+                height: 250px
+                width: 250px
+                border-radius: 125px
+                margin-bottom: 3vh
+                @include backgroundStyle                         
         .clock
             @include flexCenter
             height: 100%
             width: 15%
-            border: 1px solid purple
-            background-color: (map-get($colors, beetrans))
-            color: white
-            margin-right: 2vw
+            // border: 1px solid purple 
+            border-radius: 25px 0 0 25px
+            background-color: (map-get($colors, bee))
+            color: black
 
     //REST
 
@@ -56,26 +77,33 @@
     flex-direction: column
     color: white
     .aboutMeIcon
-        background-image: url('../images/lapa.jpg')
+        background-image: map-get($icons, about)
         @include backgroundStyle
         margin: 5vh 0 0 0
         height: 50px
         width: 50px
-        border: 1px solid green
-        &:hover
-            background-image: none
-            background-color: map-get($colors, beetrans)
+    p
+        margin-top: 1vh
+        // border: 1px solid green
+        // &:hover
+        //     background-image: none
+        //     background-color: map-get($colors, beetrans)
 
     .myHobbyIcon
         @extend .aboutMeIcon
+        background-image: map-get($icons, interests)
     .technologyIcon
         @extend .aboutMeIcon
+        background-image: map-get($icons, technology)
     .myWorkIcon
         @extend .aboutMeIcon
+        background-image: map-get($icons, myWork)
     .contactIcon
         @extend .aboutMeIcon
+        background-image: map-get($icons, contact)
     .trashIcon
         @extend .aboutMeIcon
+        background-image: map-get($icons, trash)
         
 .windowSize
     position: absolute
