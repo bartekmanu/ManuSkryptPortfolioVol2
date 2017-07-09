@@ -16,6 +16,7 @@ const MyWorkWindow =({onClick}) => (
         <div className="topLabel">
             <OffBtn onClick={onClick} />
         </div>
+        <div id="workMenu"></div>
         <div className="myWorkItem">
             <h1>My work</h1>
             

@@ -16,6 +16,7 @@ const TechnologyWindow =({onClick}) => (
         <div className="topLabel">
             <OffBtn onClick={onClick} />
         </div>
+        <div id="technologyMenu"></div>
         <div className="technologyItem">
             <h1>Technology</h1>
             <ul> 

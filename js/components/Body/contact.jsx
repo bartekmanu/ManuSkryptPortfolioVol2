@@ -16,6 +16,7 @@ const ContactWindow =({onClick}) => (
         <div className="topLabel">
             <OffBtn onClick={onClick} />
         </div>
+        <div id="contactMenu"></div>
         <div className="contactItem">
             <h1>Contact</h1>
             <div id="aboutPhoto"></div>

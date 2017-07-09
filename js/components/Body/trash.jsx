@@ -16,6 +16,7 @@ const TrashWindow =({onClick}) => (
         <div className="topLabel">
             <OffBtn onClick={onClick} />
         </div>
+        <div id="trashMenu"></div>
         <div className="trashItem">
             <h1>Trash</h1>
             <div id="aboutPhoto"></div>

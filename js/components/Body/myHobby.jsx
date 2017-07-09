@@ -16,7 +16,8 @@ const HobbyWindow =({onClick}) => (
         <div className="topLabel">
             <OffBtn onClick={onClick} />
         </div>
-        <div className="contactItem">
+        <div id="hobbyMenu"></div>
+        <div className="hobbyItem">
             <h1>Interests / Hobby</h1>
             <p>How do I spend my free time? I love extreme sports, I ride a longboard. Despite the physical effort that I have to make to stay on the board at 70 km/h, it is the best thing that relaxes me.
             </p>

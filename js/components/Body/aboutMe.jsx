@@ -16,6 +16,7 @@ const AboutMeWindow =({onClick}) => (
         <div className="topLabel">
             <OffBtn onClick={onClick} />
         </div>
+        <div id="aboutMenu"></div>
         <div className="aboutItem">
             <h1>About me</h1>
             <p>My name is <span>Bartek</span> and I am a <span>Junior Frontend Developer.</span> When I set my aims at something, I always carry out my plans. It wasn't any different this time either.

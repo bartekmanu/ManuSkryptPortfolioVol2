@@ -13,5 +13,22 @@ $start: (
 
 $desktop: (
     deskBackground: url("/images/lezak.jpg"),
-    lapa: url("/images/lapa.jpg") 
-) 
+    download: url("/images/download.png")
+);
+
+$lmenu: (
+    about: url('/images/aboutjsx.png'),
+    hobby: url('/images/hobbyjsx.png'),
+    technology: url('/images/technologyjsx.png'),
+    work: url('/images/workjsx.png'),
+    contact: url('/images/contactjsx.png'),
+    trash: url('/images/trashjsx.png')
+);
+
+$folders: (
+    folder: url('/images/folder.png')
+);
+
+$photos: (
+    downhill: url('/images/downhill_manu.jpg')
+);

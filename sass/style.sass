@@ -16,20 +16,17 @@
         align-items: center
         div
             margin-right: 20vw
-            color: map-get($colors, bee)
+            color: map-get($colors, blue)
         color: white
         height: 5%
         width: 100% 
-        // border: 1px solid red
     .containerIcon
         height: 90%
-        width: 15%
-        // border: 1px solid pink
+        width: 10%
     .footer
         height: 5%
         width: 100%
-        // border: 1px solid red
-        background-color: rgba(250, 192, 58, 0.2)
+        background-color: map-get($colors, gray)
         display: flex
         justify-content: space-between
         align-items: center
@@ -44,31 +41,28 @@
         .myCv
             @include flexCenter
             flex-direction: column
-            background-color: rgba(34, 139, 34, 0.8)
+            background-color: map-get($colors, blue)
             position: absolute
             height: 500px
             width: 400px
-            border: 1px solid green
             margin: -28.5vh 0 0 0
             p
                 a
                     text-decoration: none
                     color: white
             #download
-                background-image: map-get($desktop, lapa)
+                background-image: map-get($desktop, download)
                 height: 250px
                 width: 250px
-                border-radius: 125px
                 margin-bottom: 3vh
                 @include backgroundStyle                         
         .clock
             @include flexCenter
             height: 100%
             width: 15%
-            // border: 1px solid purple 
             border-radius: 25px 0 0 25px
-            background-color: (map-get($colors, bee))
-            color: black
+            background-color: (map-get($colors, blue))
+            color: white
 
     //REST
 
@@ -82,12 +76,13 @@
         margin: 5vh 0 0 0
         height: 50px
         width: 50px
+        &:hover 
+            border-radius: 25px
+            background-color: transparent
+            opacity: 0.5
     p
         margin-top: 1vh
-        // border: 1px solid green
-        // &:hover
-        //     background-image: none
-        //     background-color: map-get($colors, beetrans)
+        &:hover
 
     .myHobbyIcon
         @extend .aboutMeIcon
@@ -106,18 +101,64 @@
         background-image: map-get($icons, trash)
         
 .windowSize
+    display: flex
+    flex-wrap: wrap
     position: absolute
     margin: -5vh 0 0 12vw
     color: white
     height: 80vh
-    width: 80vw
-    border: 1px solid yellow
-    background-color: map-get($colors, beetrans)
+    width: 70vw
+    border: 1px solid rgb(9, 71, 113)
+    
+    #aboutMenu
+        height: 95%
+        width: 25%
+        background-image: map-get($lmenu, about) 
+        @include backgroundStyle
+        border-right: 1px solid map-get($colors, blue)
+    #hobbyMenu
+        @extend #aboutMenu
+        background-image: map-get($lmenu, hobby)
+    #technologyMenu
+        @extend #aboutMenu
+        background-image: map-get($lmenu, technology)
+    #workMenu
+        @extend #aboutMenu
+        background-image: map-get($lmenu, work)
+    #contactMenu
+        @extend #aboutMenu
+        background-image: map-get($lmenu, contact)
+    #trashMenu
+        @extend #aboutMenu
+        background-image: map-get($lmenu, trash)
     .topLabel
+        display: flex
+        justify-content: flex-end
+        align-items: center
         height: 5%
         width: 100%
-        border: 1px solid pink
-        background-color: purple
+        background-color: map-get($colors, blue)
+    .aboutItem
+        height: 95%
+        width: 75%
+        background-color: map-get($colors, gray)
+        h1
+            color: white
+        #aboutPhoto
+            height: 50%
+            width: 80%
+            background-image: map-get($photos, downhill)
+            @include backgroundStyle
+    .hobbyItem
+        @extend .aboutItem
+    .technologyItem
+        @extend .aboutItem
+    .myWorkItem
+        @extend .aboutItem
+    .contactItem
+        @extend .aboutItem
+    .trashItem
+        @extend .aboutItem
 .aboutSize
     @extend .windowSize
 .hobbySize
@@ -135,12 +176,3 @@
 .trashSize
     @extend .windowSize
     margin: -70vh 0 0 18vw
-
-.aboutItem
-    h1
-        color: white
-    #aboutPhoto
-        height: 50px
-        width: 50px
-        background-image: map-get($icons, about_me)
-        @include backgroundStyle
