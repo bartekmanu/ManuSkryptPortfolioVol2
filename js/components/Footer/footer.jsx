@@ -59,7 +59,7 @@ handleClick() {
                 <Flag onClick={this.handleShowCv} />
                 {this.state.showCv && <DownloadCv />}
                 {/*<div className="clock"> <p>Zegarek</p> </div>*/}
-                {/*<LocalTime />*/}
+                <LocalTime />
             </div>
         );        
     }

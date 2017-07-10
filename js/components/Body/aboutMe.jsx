@@ -8,7 +8,9 @@ const AboutMeIcon =({onDoubleClick}) => (
 )
 
 const OffBtn = ({onClick}) => (
-    <button className="buttonOff" onClick={onClick}>X</button>
+    <div className="buttonOff" onClick={onClick}>
+        <i className="fa fa-times-circle fa-2x" aria-hidden="true"></i>
+    </div>
 )
 
 const AboutMeWindow =({onClick}) => (
@@ -19,12 +21,11 @@ const AboutMeWindow =({onClick}) => (
         <div id="aboutMenu"></div>
         <div className="aboutItem">
             <h1>About me</h1>
-            <p>My name is <span>Bartek</span> and I am a <span>Junior Frontend Developer.</span> When I set my aims at something, I always carry out my plans. It wasn't any different this time either.
-            </p>
-            <p>I came to the realisation that I needed more opportunities for development and self-improvement. Leaving my comfort zone was not easy, but, as they say, the faint heart never won fair lady.
-            </p>
-            <p>This is how I ended up at a <span>CodersLab</span> course. Why Frontend? The greatest thing about it is that I can continue to develop myself, this About Me page being an example of that.
-            </p>
+            <div>
+                <p>My name is Bartek and I am a Junior Frontend Developer. When I set my aims at something, I always carry out my plans. It wasn't any different this time either.</p>
+                <p>I came to the realisation that I needed more opportunities for development and self-improvement. Leaving my comfort zone was not easy, but, as they say, the faint heart never won fair lady.</p>
+                <p>This is how I ended up at a CodersLab course. Why Frontend? The greatest thing about it is that I can continue to develop myself, this About Me page being an example of that.</p>
+            </div>
             <div id="aboutPhoto"></div>
         </div>
     </div>

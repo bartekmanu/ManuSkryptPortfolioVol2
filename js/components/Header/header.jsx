@@ -22,7 +22,7 @@ export default class YourTime extends React.Component{
         return (
             <div className = 'yourTime'>
                 <div>
-                    <p>WELCOME</p>
+                    <h1>WELCOME</h1>
                     {/*<p>Your time spent for me: {this.state.seconds} s.</p>*/}
                 </div>
             </div>

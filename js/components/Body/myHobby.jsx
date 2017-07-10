@@ -8,7 +8,9 @@ const MyHobbyIcon =({onDoubleClick}) => (
 )
 
 const OffBtn = ({onClick}) => (
-    <button className="buttonOff" onClick={onClick}>X</button>
+    <div className="buttonOff" onClick={onClick}>
+        <i className="fa fa-times-circle fa-2x" aria-hidden="true"></i>
+    </div>
 )
 
 const HobbyWindow =({onClick}) => (
@@ -18,13 +20,12 @@ const HobbyWindow =({onClick}) => (
         </div>
         <div id="hobbyMenu"></div>
         <div className="hobbyItem">
-            <h1>Interests / Hobby</h1>
-            <p>How do I spend my free time? I love extreme sports, I ride a longboard. Despite the physical effort that I have to make to stay on the board at 70 km/h, it is the best thing that relaxes me.
-            </p>
-            <p>My other big hobby is beekeeping, my apiary called "Miodożer" (Honey Gobbler). Turning honey and working with bees gives me a lot of satisfaction.
-            </p>
-            <p>There are also some animals always waiting for me at home. My quadrupeds: two dogs, a cat, a pair of lizards ... need I continue?
-            </p>
+            <h1>Hobby</h1>
+            <div>
+                <p>How do I spend my free time? I love extreme sports, I ride a longboard. Despite the physical effort that I have to make to stay on the board at 70 km/h, it is the best thing that relaxes me.</p>
+                <p>My other big hobby is beekeeping, my apiary called "Miodożer" (Honey Gobbler). Turning honey and working with bees gives me a lot of satisfaction.</p>
+                <p>There are also some animals always waiting for me at home. My quadrupeds: two dogs, a cat, a pair of lizards ... need I continue?</p>
+            </div>
             <div id="aboutPhoto"></div>
         </div>
     </div>

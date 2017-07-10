@@ -14,12 +14,13 @@
         display: flex
         justify-content: flex-end
         align-items: center
-        div
-            margin-right: 20vw
-            color: map-get($colors, blue)
         color: white
         height: 5%
-        width: 100% 
+        width: 100%
+        div
+            margin-right: 20vw
+            color: white
+         
     .containerIcon
         height: 90%
         width: 10%
@@ -30,14 +31,15 @@
         display: flex
         justify-content: space-between
         align-items: center
-        .flag
+        .flag  
             margin-left: 2vw
-            height: 35px
-            width: 35px
-            border: 3px solid black
+            height: 40px
+            width: 40px
+            border: 2px solid white
             border-radius: 25px
             background-image: map-get($start, start)
             @include backgroundStyle
+            background-size: contain
         .myCv
             @include flexCenter
             flex-direction: column
@@ -47,6 +49,8 @@
             width: 400px
             margin: -28.5vh 0 0 0
             p
+                width: 80%
+                text-align: center
                 a
                     text-decoration: none
                     color: white
@@ -107,15 +111,17 @@
     margin: -5vh 0 0 12vw
     color: white
     height: 80vh
-    width: 70vw
+    width: 75vw
     border: 1px solid rgb(9, 71, 113)
-    
+    border-radius: 10px
     #aboutMenu
         height: 95%
         width: 25%
         background-image: map-get($lmenu, about) 
         @include backgroundStyle
         border-right: 1px solid map-get($colors, blue)
+        border-bottom-left-radius: 8px
+        
     #hobbyMenu
         @extend #aboutMenu
         background-image: map-get($lmenu, hobby)
@@ -138,41 +144,162 @@
         height: 5%
         width: 100%
         background-color: map-get($colors, blue)
+        border-top-left-radius: 8px
+        border-top-right-radius: 8px
+        .buttonOff
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-right: 1vw
+            height: 25px
+            width: 25px
+            border-radius: 25px
+            &:hover
+                color: red
+                cursor: pointer
     .aboutItem
         height: 95%
         width: 75%
         background-color: map-get($colors, gray)
+        border-bottom-right-radius: 8px
+        @include flexCenter
+        flex-direction: column
         h1
+            color: map-get($colors, blue)
             color: white
+        div
+            text-align: center
+            line-height: 2.5vh
+            width: 80%
+            margin-bottom: 3vh
         #aboutPhoto
             height: 50%
             width: 80%
             background-image: map-get($photos, downhill)
             @include backgroundStyle
+            
     .hobbyItem
         @extend .aboutItem
     .technologyItem
         @extend .aboutItem
+        .techItems
+            width: 95%
+            height: 80%
+            display: flex
+            flex-wrap: wrap
+            align-content: flex-start
+            #tech1
+                height: 100px
+                width: 100px
+                margin-right: 2vw
+                @include backgroundStyle
+                background-size: contain
+                background-image: map-get($technology, html)
+            #tech2
+                @extend #tech1
+                background-image: map-get($technology, css)
+            #tech3
+                @extend #tech1
+                background-image: map-get($technology, js)
+            #tech4
+                @extend #tech1
+                background-image: map-get($technology, jquery)
+            #tech5
+                @extend #tech1
+                background-image: map-get($technology, es6)
+            #tech6
+                @extend #tech1
+                background-image: map-get($technology, react)
+            #tech7
+                @extend #tech1
+                background-image: map-get($technology, rwd)
+            #tech8
+                @extend #tech1
+                background-image: map-get($technology, sass)
+            #tech9
+                @extend #tech1
+                background-image: map-get($technology, git)
     .myWorkItem
         @extend .aboutItem
+        div
+            height: 90%
+            width: 95%
+            display: flex
+            flex-wrap: wrap
+            align-content: flex-start
+            a
+                height: 10%            
+                display: block
+                margin: 0 3vw 0 0
+                text-decoration: none
+                color: white
+                .fa-cog
+                    height: 100px
+                    width: 100px
+                &:hover
+                    opacity: 0.7
+                #work1
+                    margin: 0 auto
+                    height: 100px
+                    width: 100px
+                    @include backgroundStyle
+                    background-size: contain
+                    background-image: map-get($folders, folder)
+
     .contactItem
         @extend .aboutItem
+        div
+            height: 90%
+            width: 95%
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            align-content: flex-start
+            a
+                text-decoration: none
+                color: white
+                margin: 0 2.5vw 0 0
+                height: 150px
+                width: 150px
+                &:hover
+                    opacity: 0.5
     .trashItem
         @extend .aboutItem
+        div
+            height: 90%
+            width: 95%
+            display: flex
+            flex-wrap: wrap
+            align-content: flex-start
+            a 
+                height: 10%            
+                display: block
+                margin: 0 3vw 0 0
+                text-decoration: none
+                color: white
+                &:hover
+                    opacity: 0.7
+                #crap
+                    margin: 0 auto
+                    height: 100px
+                    width: 100px
+                    @include backgroundStyle
+                    background-size: contain
+                    background-image: map-get($folders, folder)
 .aboutSize
-    @extend .windowSize
+    @extend .windowSize 
 .hobbySize
     @extend .windowSize
     margin: -20vh 0 0 15vw
 .technologySize
     @extend .windowSize
-    margin: -25vh 0 0 14vw
+    margin: -30vh 0 0 16vw
 .workSize
     @extend .windowSize
-    margin: -38vh 0 0 19vw
+    margin: -50vh 0 0 17vw
 .contactSize
     @extend .windowSize
-    margin: -52vh 0 0 13vw
-.trashSize
+    margin: -60vh 0 0 13vw
+.trashSize 
     @extend .windowSize
     margin: -70vh 0 0 18vw

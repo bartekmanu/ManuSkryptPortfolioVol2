@@ -8,7 +8,9 @@ const TechnologyIcon =({onDoubleClick}) => (
 )
 
 const OffBtn = ({onClick}) => (
-    <button className="buttonOff" onClick={onClick}>X</button>
+    <div className="buttonOff" onClick={onClick}>
+        <i className="fa fa-times-circle fa-2x" aria-hidden="true"></i>
+    </div>
 )
 
 const TechnologyWindow =({onClick}) => (
@@ -19,18 +21,17 @@ const TechnologyWindow =({onClick}) => (
         <div id="technologyMenu"></div>
         <div className="technologyItem">
             <h1>Technology</h1>
-            <ul> 
-                <li id="image1"></li>
-                <li id="image2"></li>
-                <li id="image3"></li>
-                <li id="image4"></li>
-                <li id="image5"></li>
-                <li id="image6"></li>
-                <li id="image7"></li>
-                <li id="image8"></li>
-                <li id="image9"></li>
-            </ul>
-            <div id="aboutPhoto"></div>
+            <div className="techItems">
+                <div id="tech1"></div>
+                <div id="tech2"></div>
+                <div id="tech3"></div>
+                <div id="tech4"></div>
+                <div id="tech5"></div>
+                <div id="tech6"></div>
+                <div id="tech7"></div>
+                <div id="tech8"></div>
+                <div id="tech9"></div>
+            </div>
         </div>
     </div>
 )
