@@ -1,8 +1,8 @@
 import React from 'react';
 
-const AboutMeIcon =({onDoubleClick}) => (
+const AboutMeIcon =({onClick}) => (
     <div className="rim">
-        <div className="aboutMeIcon" onDoubleClick={onDoubleClick}></div>
+        <div className="aboutMeIcon" onClick={onClick}></div>
         <p>About me</p>
     </div>
 )
@@ -52,7 +52,7 @@ export default class AboutMeComplex extends React.Component {
     render() {
         return (
             <div>
-                <AboutMeIcon onDoubleClick={this.boundShowWindow} />
+                <AboutMeIcon onClick={this.boundShowWindow} />
                 {this.state.showWindow && <AboutMeWindow onClick={this.boundHideWindow}/>}
             </div>
         );

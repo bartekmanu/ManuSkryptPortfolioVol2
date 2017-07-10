@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TechnologyIcon =({onDoubleClick}) => (
+const TechnologyIcon =({onClick}) => (
     <div className="rim">
-        <div className="technologyIcon" onDoubleClick={onDoubleClick}></div>
+        <div className="technologyIcon" onClick={onClick}></div>
         <p>Technology</p>
     </div>
 )
@@ -57,7 +57,7 @@ export default class TechnologyComplex extends React.Component {
     render() {
         return (
             <div>
-                <TechnologyIcon onDoubleClick={this.boundShowWindow} />
+                <TechnologyIcon onClick={this.boundShowWindow} />
                 {this.state.showWindow && <TechnologyWindow onClick={this.boundHideWindow}/>}
             </div>
         );

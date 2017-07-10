@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ContactIcon =({onDoubleClick}) => (
+const ContactIcon =({onClick}) => (
     <div className="rim">
-        <div className="contactIcon" onDoubleClick={onDoubleClick}></div>
+        <div className="contactIcon" onClick={onClick}></div>
         <p>Contact</p>
     </div>
 )
@@ -72,7 +72,7 @@ export default class ContactComplex extends React.Component {
     render() {
         return (
             <div>
-                <ContactIcon onDoubleClick={this.boundShowWindow} />
+                <ContactIcon onClick={this.boundShowWindow} />
                 {this.state.showWindow && <ContactWindow onClick={this.boundHideWindow}/>}
             </div>
         );

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-require('../sass/style.sass');
+// requsire('../sass/style.sass');
 
 import Desktop from "./components/Body/body.jsx";
 

@@ -40,6 +40,7 @@
             background-image: map-get($start, start)
             @include backgroundStyle
             background-size: contain
+            cursor: pointer
         .myCv
             @include flexCenter
             flex-direction: column
@@ -303,3 +304,31 @@
 .trashSize 
     @extend .windowSize
     margin: -70vh 0 0 18vw
+
+@media (max-width: 768px)
+    .desktop
+        .containerIcon
+            width: 25%
+    .aboutSize
+        margin: -10vh 0 
+        height: 80%
+        width: 100%
+        #aboutMenu
+            display: none
+        .aboutItem
+            width: 100%
+    .hobbySize
+        @extend .aboutSize
+        margin: -25vh 0
+    .technologySize
+        @extend .aboutSize
+        margin: -37vh 0
+    .workSize
+        @extend .aboutSize
+        margin: -50vh 0
+    .contactSize
+        @extend .aboutSize
+        margin: -63vh 0
+    .trashSize
+        @extend .aboutSize
+        margin: -76vh 0

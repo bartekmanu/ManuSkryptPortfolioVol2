@@ -1,8 +1,8 @@
 import React from 'react';
 
-const MyHobbyIcon =({onDoubleClick}) => (
+const MyHobbyIcon =({onClick}) => (
     <div className="rim">
-        <div className="myHobbyIcon" onDoubleClick={onDoubleClick}></div>
+        <div className="myHobbyIcon" onClick={onClick}></div>
         <p>My hobby</p>
     </div>
 )
@@ -52,7 +52,7 @@ export default class HobbyComplex extends React.Component {
     render() {
         return (
             <div>
-                <MyHobbyIcon onDoubleClick={this.boundShowWindow} />
+                <MyHobbyIcon onClick={this.boundShowWindow} />
                 {this.state.showWindow && <HobbyWindow onClick={this.boundHideWindow}/>}
             </div>
         );

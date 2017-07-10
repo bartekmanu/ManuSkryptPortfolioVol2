@@ -9533,7 +9533,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 document.addEventListener('DOMContentLoaded', function () {
   _reactDom2.default.render(_react2.default.createElement(_body2.default, null), document.getElementById('app'));
 });
-// require('../sass/style.sass');
+// requsire('../sass/style.sass');
 
 /***/ }),
 /* 82 */
@@ -10028,11 +10028,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var AboutMeIcon = function AboutMeIcon(_ref) {
-    var onDoubleClick = _ref.onDoubleClick;
+    var onClick = _ref.onClick;
     return _react2.default.createElement(
         "div",
         { className: "rim" },
-        _react2.default.createElement("div", { className: "aboutMeIcon", onDoubleClick: onDoubleClick }),
+        _react2.default.createElement("div", { className: "aboutMeIcon", onClick: onClick }),
         _react2.default.createElement(
             "p",
             null,
@@ -10125,7 +10125,7 @@ var AboutMeComplex = function (_React$Component) {
             return _react2.default.createElement(
                 "div",
                 null,
-                _react2.default.createElement(AboutMeIcon, { onDoubleClick: this.boundShowWindow }),
+                _react2.default.createElement(AboutMeIcon, { onClick: this.boundShowWindow }),
                 this.state.showWindow && _react2.default.createElement(AboutMeWindow, { onClick: this.boundHideWindow })
             );
         }
@@ -10274,11 +10274,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var ContactIcon = function ContactIcon(_ref) {
-    var onDoubleClick = _ref.onDoubleClick;
+    var onClick = _ref.onClick;
     return _react2.default.createElement(
         "div",
         { className: "rim" },
-        _react2.default.createElement("div", { className: "contactIcon", onDoubleClick: onDoubleClick }),
+        _react2.default.createElement("div", { className: "contactIcon", onClick: onClick }),
         _react2.default.createElement(
             "p",
             null,
@@ -10405,7 +10405,7 @@ var ContactComplex = function (_React$Component) {
             return _react2.default.createElement(
                 "div",
                 null,
-                _react2.default.createElement(ContactIcon, { onDoubleClick: this.boundShowWindow }),
+                _react2.default.createElement(ContactIcon, { onClick: this.boundShowWindow }),
                 this.state.showWindow && _react2.default.createElement(ContactWindow, { onClick: this.boundHideWindow })
             );
         }
@@ -10442,11 +10442,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var MyHobbyIcon = function MyHobbyIcon(_ref) {
-    var onDoubleClick = _ref.onDoubleClick;
+    var onClick = _ref.onClick;
     return _react2.default.createElement(
         "div",
         { className: "rim" },
-        _react2.default.createElement("div", { className: "myHobbyIcon", onDoubleClick: onDoubleClick }),
+        _react2.default.createElement("div", { className: "myHobbyIcon", onClick: onClick }),
         _react2.default.createElement(
             "p",
             null,
@@ -10539,7 +10539,7 @@ var HobbyComplex = function (_React$Component) {
             return _react2.default.createElement(
                 "div",
                 null,
-                _react2.default.createElement(MyHobbyIcon, { onDoubleClick: this.boundShowWindow }),
+                _react2.default.createElement(MyHobbyIcon, { onClick: this.boundShowWindow }),
                 this.state.showWindow && _react2.default.createElement(HobbyWindow, { onClick: this.boundHideWindow })
             );
         }
@@ -10576,11 +10576,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var MyWorkIcon = function MyWorkIcon(_ref) {
-    var onDoubleClick = _ref.onDoubleClick;
+    var onClick = _ref.onClick;
     return _react2.default.createElement(
         "div",
         { className: "rim" },
-        _react2.default.createElement("div", { className: "myWorkIcon", onDoubleClick: onDoubleClick }),
+        _react2.default.createElement("div", { className: "myWorkIcon", onClick: onClick }),
         _react2.default.createElement(
             "p",
             null,
@@ -10677,7 +10677,7 @@ var MyWorkComplex = function (_React$Component) {
             return _react2.default.createElement(
                 "div",
                 null,
-                _react2.default.createElement(MyWorkIcon, { onDoubleClick: this.boundShowWindow }),
+                _react2.default.createElement(MyWorkIcon, { onClick: this.boundShowWindow }),
                 this.state.showWindow && _react2.default.createElement(MyWorkWindow, { onClick: this.boundHideWindow })
             );
         }
@@ -10714,11 +10714,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var TechnologyIcon = function TechnologyIcon(_ref) {
-    var onDoubleClick = _ref.onDoubleClick;
+    var onClick = _ref.onClick;
     return _react2.default.createElement(
         "div",
         { className: "rim" },
-        _react2.default.createElement("div", { className: "technologyIcon", onDoubleClick: onDoubleClick }),
+        _react2.default.createElement("div", { className: "technologyIcon", onClick: onClick }),
         _react2.default.createElement(
             "p",
             null,
@@ -10804,7 +10804,7 @@ var TechnologyComplex = function (_React$Component) {
             return _react2.default.createElement(
                 "div",
                 null,
-                _react2.default.createElement(TechnologyIcon, { onDoubleClick: this.boundShowWindow }),
+                _react2.default.createElement(TechnologyIcon, { onClick: this.boundShowWindow }),
                 this.state.showWindow && _react2.default.createElement(TechnologyWindow, { onClick: this.boundHideWindow })
             );
         }
@@ -10841,11 +10841,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var TrashIcon = function TrashIcon(_ref) {
-    var onDoubleClick = _ref.onDoubleClick;
+    var onClick = _ref.onClick;
     return _react2.default.createElement(
         "div",
         { className: "rim" },
-        _react2.default.createElement("div", { className: "trashIcon", onDoubleClick: onDoubleClick }),
+        _react2.default.createElement("div", { className: "trashIcon", onClick: onClick }),
         _react2.default.createElement(
             "p",
             null,
@@ -10932,7 +10932,7 @@ var TrashComplex = function (_React$Component) {
             return _react2.default.createElement(
                 "div",
                 null,
-                _react2.default.createElement(TrashIcon, { onDoubleClick: this.boundShowWindow }),
+                _react2.default.createElement(TrashIcon, { onClick: this.boundShowWindow }),
                 this.state.showWindow && _react2.default.createElement(TrashWindow, { onClick: this.boundHideWindow })
             );
         }

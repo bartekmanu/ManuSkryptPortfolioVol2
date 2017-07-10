@@ -1,8 +1,8 @@
 import React from 'react';
 
-const MyWorkIcon = ({ onDoubleClick }) => (
+const MyWorkIcon = ({ onClick }) => (
     <div className="rim">
-        <div className="myWorkIcon" onDoubleClick={onDoubleClick}></div>
+        <div className="myWorkIcon" onClick={onClick}></div>
         <p>My work</p>
     </div>
 )
@@ -56,7 +56,7 @@ export default class MyWorkComplex extends React.Component {
     render() {
         return (
             <div>
-                <MyWorkIcon onDoubleClick={this.boundShowWindow} />
+                <MyWorkIcon onClick={this.boundShowWindow} />
                 {this.state.showWindow && <MyWorkWindow onClick={this.boundHideWindow} />}
             </div>
         );

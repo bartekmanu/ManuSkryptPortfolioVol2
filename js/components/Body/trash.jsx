@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TrashIcon =({onDoubleClick}) => (
+const TrashIcon =({onClick}) => (
     <div className="rim">
-            <div className="trashIcon" onDoubleClick={onDoubleClick}></div>
+            <div className="trashIcon" onClick={onClick}></div>
             <p>Trash</p>
     </div>
 )
@@ -52,7 +52,7 @@ export default class TrashComplex extends React.Component {
     render() {
         return (
             <div>
-                <TrashIcon onDoubleClick={this.boundShowWindow} />
+                <TrashIcon onClick={this.boundShowWindow} />
                 {this.state.showWindow && <TrashWindow onClick={this.boundHideWindow}/>}
             </div>
         );
