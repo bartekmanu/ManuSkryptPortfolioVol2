@@ -26,7 +26,7 @@ const HobbyWindow =({onClick}) => (
                 <p>My other big hobby is beekeeping, my apiary called "Miodożer" (Honey Gobbler). Turning honey and working with bees gives me a lot of satisfaction.</p>
                 <p>There are also some animals always waiting for me at home. My quadrupeds: two dogs, a cat, a pair of lizards ... need I continue?</p>
             </div>
-            <div id="aboutPhoto"></div>
+            <div id="hobbyPhoto"></div>
         </div>
     </div>
 )

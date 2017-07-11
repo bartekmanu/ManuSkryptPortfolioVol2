@@ -10502,7 +10502,7 @@ var HobbyWindow = function HobbyWindow(_ref3) {
                     "There are also some animals always waiting for me at home. My quadrupeds: two dogs, a cat, a pair of lizards ... need I continue?"
                 )
             ),
-            _react2.default.createElement("div", { id: "aboutPhoto" })
+            _react2.default.createElement("div", { id: "hobbyPhoto" })
         )
     );
 };

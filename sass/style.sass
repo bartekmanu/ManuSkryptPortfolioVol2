@@ -47,8 +47,8 @@
             background-color: map-get($colors, blue)
             position: absolute
             height: 500px
-            width: 400px
-            margin: -50vh 0 0 36vw
+            width: 350px
+            margin: -50vh 0 0 40vw
             p
                 width: 80%
                 text-align: center
@@ -178,9 +178,13 @@
             width: 80%
             background-image: map-get($photos, downhill)
             @include backgroundStyle
-            
-    .hobbyItem
+    .hobbyItem 
         @extend .aboutItem
+        #hobbyPhoto
+            background-image: map-get($photos, stund)
+            height: 50%
+            width: 80%
+            @include backgroundStyle
     .technologyItem
         @extend .aboutItem
         .techItems
@@ -339,12 +343,12 @@
     .trashSize
         @extend .aboutSize
         margin: -20vh 0 0 -50vw
-    .desktop    
+    .desktop
         .footer
             .clock
                 width: 30vw
             .myCv
-                margin: -50vh 0 0 7vw
+                margin: -50vh 0 0 9vw
 
 @media (max-width: 1024px)
     .windowSize
