@@ -28,9 +28,9 @@ const Flag = ({onClick}) => (
 const DownloadCv =() => (
     <div className="myCv">
         <div id="download"></div>
-        <p><a href="https://www.dropbox.com/s/cgke0ouov9fnctc/CV-%20Bartosz%20Manowski%20eng.pdf?dl=0" download>Click here to Download my CV</a></p>
+        <p><a href="https://www.dropbox.com/s/cf2iypf2yxfbhul/CV-%20Bartosz%20Manowski%20eng.pdf?dl=0" download>Click here to Download my CV</a></p>
         {/*<Form />*/}
-    </div>
+    </div> 
 )
 
 export default class Footer extends React.Component {

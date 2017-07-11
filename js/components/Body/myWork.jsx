@@ -22,9 +22,9 @@ const MyWorkWindow = ({ onClick }) => (
         <div className="myWorkItem">
             <h1>My work</h1>
             <div>
-                <a target="_blank" href="https://www.youtube.com/watch?v=2bMTPGl7DdY">
+                <a target="_blank" href="https://bartekmanu.github.io/Moonspeak/moonspeak">
                     <div id="work1"></div>
-                    <p>1st work</p>
+                    <p>Moonspeak</p>
                 </a>
                 <a target="_blank">
                     <i className="fa fa-cog fa-spin fa-3x "></i>

@@ -18,7 +18,7 @@ const AboutMeWindow =({onClick}) => (
         <div className="topLabel">
             <OffBtn onClick={onClick} />
         </div>
-        <div id="aboutMenu"></div>
+        <div id="aboutMenu"></div> 
         <div className="aboutItem">
             <h1>About me</h1>
             <div>

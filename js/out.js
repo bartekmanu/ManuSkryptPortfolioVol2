@@ -9533,7 +9533,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 document.addEventListener('DOMContentLoaded', function () {
   _reactDom2.default.render(_react2.default.createElement(_body2.default, null), document.getElementById('app'));
 });
-// requsire('../sass/style.sass');
+// require('../sass/style.sass');
 
 /***/ }),
 /* 82 */
@@ -10622,12 +10622,12 @@ var MyWorkWindow = function MyWorkWindow(_ref3) {
                 null,
                 _react2.default.createElement(
                     "a",
-                    { target: "_blank", href: "https://www.youtube.com/watch?v=2bMTPGl7DdY" },
+                    { target: "_blank", href: "https://bartekmanu.github.io/Moonspeak/moonspeak" },
                     _react2.default.createElement("div", { id: "work1" }),
                     _react2.default.createElement(
                         "p",
                         null,
-                        "1st work"
+                        "Moonspeak"
                     )
                 ),
                 _react2.default.createElement(
@@ -11024,7 +11024,7 @@ var DownloadCv = function DownloadCv() {
             null,
             _react2.default.createElement(
                 'a',
-                { href: 'https://www.dropbox.com/s/cgke0ouov9fnctc/CV-%20Bartosz%20Manowski%20eng.pdf?dl=0', download: true },
+                { href: 'https://www.dropbox.com/s/cf2iypf2yxfbhul/CV-%20Bartosz%20Manowski%20eng.pdf?dl=0', download: true },
                 'Click here to Download my CV'
             )
         )
